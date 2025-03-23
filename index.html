@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js" defer></script> 
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet">
+    <title>Lista de Compras</title>
+</head>
+<body>
+    <div class="fondo"> </div>
+
+    <div class="Compras">
+        <h1>BIENVENIDO</h1>
+        <p>Crea tu lista de compras </p>
+        <p>Ingresa cada producto uno por uno </p>
+        <div id="Lista">
+            <label for="producto"> Agrega un producto: </label>
+            <br><input type="text" id="producto" placeholder="Producto">
+            <br><button onclick="agregarProducto(document.getElementById('producto').value)">Agregar</button> <!-- Agregado el botón de "Agregar" -->
+        </div>
+
+
+
+        <div id="Listafinal">
+            <ul id="listaDeCompras"></ul> 
+        </div>
+
+        <div id="eliminar">
+            <label for="productoEliminar">Eliminar producto: </label>
+            <br><input type="text" id="productoEliminar" placeholder="Producto">
+            <br><button onclick="eliminarProducto(document.getElementById('productoEliminar').value)">Eliminar</button> <!-- Botón para eliminar -->
+        </div>
+    
+    </div>
+
+</body>
+</html>

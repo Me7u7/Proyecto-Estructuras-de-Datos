@@ -1,0 +1,68 @@
+:root{
+    --main-radius: 10px;
+    --main-padding: 20px;
+    background-image: url("https://preview.redd.it/kawaii-supermarket-v0-3idj8xptf7ua1.jpg?auto=webp&s=baf5d8f30f815719eec5405f01229f4e6be4b06d");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    align-items: center;
+    justify-items: center;
+    place-items: center;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: 'Yomogi', cursive;
+
+}
+
+
+
+.Compras{
+    color: rgb(70, 18, 102);
+    background-color: rgb(239, 239, 239);
+    border-radius: var(--main-radius); /* Ahora sí se aplica un valor */
+    padding: var(--main-padding); /* Agrega espacio interno */
+    box-sizing: border-box; /* Asegura que padding y border no desborden el tamaño */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: inline-block; /* Permite que se ajuste al contenido */
+    max-width: 100%;
+    align-items: center;
+    font-size: x-large;
+    font-family: 'Sawarabi Gothic', sans-serif;
+
+    
+}
+
+button{
+    background-color: rgb(188, 111, 188);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: var(--main-radius);
+    text-transform: uppercase;
+    font-family: 'Sawarabi Gothic', sans-serif;
+
+}
+
+button:hover{
+    background-color: rgb(119, 19, 119);
+    font-family: 'Sawarabi Gothic', sans-serif;
+}
+
+#Lista,  #Listafinal, #eliminar{
+    color: rgb(157, 54, 157);
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    border-color:  rgb(135, 9, 135);
+    
+}
+
+@media only screen and (max-width: 550px) {
+    .container {
+        font-size: 14px; 
+        padding: 5px; 
+        display: grid; 
+    }
+}
